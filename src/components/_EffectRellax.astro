@@ -1,0 +1,28 @@
+<script
+  is:inline
+  src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+></script>
+
+<script is:inline>
+const elements = document.querySelectorAll(".rellax");
+const parent = document.querySelector(".rellax-container");
+
+elements.forEach((el) => {
+    const x = Math.random() * parent.offsetWidth;
+    const y = Math.random() * parent.offsetHeight;
+
+    el.style.left = `${x}px`;
+    el.style.top = `${y}px`;
+});
+
+if (window.Rellax) {
+    new window.Rellax(".rellax", {
+        speed: -2,
+        center: true,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false,
+    });
+}
+</script>

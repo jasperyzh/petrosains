@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+$headings-font-weight: 700;
+
+@import "bootstrap/scss/bootstrap";
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// sticky_footer
+body {
+	min-block-size: 100vh;
+	display: flex;
+	flex-direction: column;
+	& > main {
+		flex-shrink: 0;
+		min-block-size: 60vh;
+	}
+	& > footer {
+		margin-top: auto;
+	}
+}
+
+// setup
+body {
+	font-family: "Poppins", sans-serif;
+}
+/* .display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-weight: bold;
+} */
+// debug
+header footer,
+header {
+	background-color: rgba(0, 0, 0, 0.05);
+}

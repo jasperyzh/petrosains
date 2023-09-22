@@ -1,0 +1,44 @@
+---
+const {
+  title = "Page Title",
+  description = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores deleniti ratione obcaecati.",
+  classes = "pt-250 page-title-large",
+  img_src = "/haswell/images/about-me.jpg",
+  backgroundPosition = "center",
+} = Astro.props;
+
+const defaultStyle = {
+  backgroundImage: `url("${img_src}")`,
+  backgroundPosition: `${backgroundPosition}`,
+};
+---
+
+<div
+  class:list={["page-title-cont grey-dark-bg page-title-img", classes]}
+  style={defaultStyle}
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="page-title">{title}</h1>
+        <div class="page-sub-title col-md-8 mb-md-0">
+          {description}
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 d-inline-flex mt-4 mt-lg-0 justify-content-lg-end align-items-end"
+      >
+        <slot name="breadcrumb">
+          <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <span class="slash-divider">/</span>
+            <a href="#">BLOG</a>
+            <span class="slash-divider">/</span>
+            <span class="bread-current">MASONRY</span>
+          </div>
+        </slot>
+      </div>
+    </div>
+  </div>
+</div>

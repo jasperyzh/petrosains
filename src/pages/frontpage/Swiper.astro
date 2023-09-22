@@ -1,0 +1,86 @@
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/images/petrosains_2015-201502151501.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/images/playsmart_2017-201711171546high.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/images/playsmart_2017-201711171124-5high.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/images/Sorang Sorang (Ticket)-ZH_01167.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/images/petrosains_2015-201502151613-11.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/images/PlaySmart Kuching-ZH_01598.jpg" />
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script is:inline>
+if (window.Swiper) {
+    new window.Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 10,
+            stretch: 0,
+            depth: 50,
+            modifier: 1,
+            // slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        loop: true,
+    });
+}
+</script>
+<style is:global lang="scss">
+  /*   .swiper-wrapper {
+      .swiper-slide {
+        width: 40%;
+        aspect-ratio: 16/9;
+        transition: width 0.4s ease;
+      }
+  
+      .swiper-slide-active {
+        width: 60%;
+      }
+    } */
+  /* 
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    } */
+  .swiper.mySwiper {
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 60vw;
+      /* height: 300px; */
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+  }
+</style>

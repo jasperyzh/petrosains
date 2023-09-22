@@ -1,0 +1,312 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Card from "../components/_Card.astro";
+
+
+import Hero from "./frontpage/Hero.astro";
+import Swiper from "./frontpage/Swiper.astro";
+import Ticket from "./frontpage/Ticket.astro";
+---
+
+<Layout>
+  <main>
+    <Hero />
+    <!-- <section class="container">
+      <ul>
+        <li><a href="/">frontpage</a></li>
+        <li><a href="/single">single</a></li>
+        <li><a href="/page">page</a></li>
+        <li><a href="/archive">archive</a></li>
+        <li><a href="/404">404</a></li>
+        <li><a href="/cheatsheet">cheatsheet</a></li>
+      </ul>
+    </section> -->
+
+    <section class="spacing-lg">
+      <div class="p-5 mb-4 text-center rounded-3">
+        <div class="container-fluid py-5 justify-content-center">
+          <h2 class="display-2">
+            Exciting Adventures <span class="text-bg-primary">Ahead!</span>
+          </h2>
+          <p class="lead col-md-8 mx-auto">
+            Explore our blockbuster exhibits and showcases, constantly updated
+            to make sure your visit to PETROSAINS is a happy adventure for all.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="spacing-lg py-5 text-center">
+      <div class="col-md-4 mx-auto text-bg-primary p-4">
+        <h2>Laugh & Play at PETROSAINS KLCC</h2>
+        <p>
+          Interactive, experiential, and hands-on, Petrosains, The Discovery
+          Centre is everything a science centre should be! With exciting
+          exhibits and intriguing activities we make learning STEM (science,
+          technology, engineering and mathematics) fun while nurturing you to
+          further explore science and technology!
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="carousel"
+      class="text-bg-primary spacing-lg"
+      style="padding: 5rem 0"
+    >
+      <div class="custom-shape-divider-top-1691000743">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="container text-white text-center rounded-3">
+        <h2 class="display-2">Let’s Experiment</h2>
+        <p class="lead col-md-8 mx-auto">
+          There’s so much to do and explore in PETROSIANS KLCC, come and join in
+          the fun and play with our multisensory exhibits, updated to assist
+          young minds explore.
+        </p>
+      </div>
+      <div class="container-fluid p-0">
+        <Swiper />
+      </div>
+
+      <div class="custom-shape-divider-bottom-1691000587">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="spacing-lg">
+      <div class="container text-center">
+        <h2 class="display-2">Limited Time Attractions</h2>
+        <p class="lead col-md-8 mx-auto">
+          Our passion for bringing science to life in many exciting and
+          extraordinary ways has, helped us gain both local and international
+          recognition, thank you for your continuous support!
+        </p>
+
+        <div class="row row-cols-3">
+          <Card
+            title="Petrosains Online Learning"
+            description="We believe that discovering and learning can take place at any time and anywhere. Our team has put together some unique and fun activities you and your loved ones can do side-by-side. Go on – try it out!"
+            imgsrc="/images/PETROSAINS Multi 1-ZH_02611.jpg"
+          />
+          <Card
+            title="Discovery, Now Even Closer to You"
+            description="Petrosains brings exciting scientific discovery and inspiring activities closer to you with Petrosains PlaySmart, now at a town near you."
+            imgsrc="/images/Sorang Sorang (Ticket)-ZH_01172.jpg"
+          />
+          <Card
+            title="Science As It Should Be"
+            description="Learning in the classroom is all well and good, but nothing sparks curiosity, interest and inspiration like truly hands-on scientific discovery – which is exactly what our workshops, shows and activities are here for!"
+            imgsrc="/images/PlaySmart Kuantan-ZH_08559.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <Ticket />
+
+    <section id="promotion-claim">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-xl-3">
+          <div class="col">
+            <h2 class="display-2">Click to buy your tickets today</h2>
+          </div>
+          <div class="col">
+            <div class="card text-bg-purple h-100">
+              <div class="card-body">
+                <h5 class="card-title display-3">
+                  Marker Studio Tickets
+                  <div class="d-block">
+                    <s>RM5</s>
+                    <span class="text-success">RM3</span>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Buidling blocks and Science, come make your project a reality!
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Claim Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-bg-primary h-100">
+              <div class="card-body">
+                <h5 class="card-title display-3">
+                  Energy Capsule Tickets
+                  <div class="d-block">
+                    <s>RM9</s>
+                    <span class="text-success">RM3</span>
+                  </div>
+                </h5>
+                <p class="card-text">
+                  Fondly known as the Dark Ride - Experience it today!
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Claim Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="excellence-services" class="spacing-lg">
+      <div class="container my-5">
+        <div class="row shadow-sm">
+          <div class="col-md-6 order-lg-2 p-0">
+            <img
+              class="object-fit-cover h-100 aspect-video"
+              src="/images/PlaySmart Kuantan-ZH_08552-16x9.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-md-6 order-lg-1 p-5 d-inline-flex align-items-start justify-content-center flex-column"
+          >
+            <h2 class="h3">Service Excellence</h2>
+            <p>
+              Our passion for bringing science to life in many exciting and
+              extraordinary ways has, helped us gain both local and
+              international recognition, thank you for your continuous support!
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-sm"
+              >View Promotions</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="spacing-lg">
+      <div class="text-center">
+        <h2>PETROSAINS in the wild</h2>
+        <p>
+          Let’s be friends! Connect with us on our instagram and submit your
+          best selfie yet.
+        </p>
+      </div>
+
+      <div class="container popup-gallery">
+        <div class="row row-cols-2 row-cols-md-4 g-1">
+          <a href="/images/Maker Studio-ZH_02051.jpg">
+            <img src="/images/Maker Studio-ZH_02051.jpg" />
+          </a>
+          <a href="/images/Maker Studio-ZH_02108.jpg">
+            <img src="/images/Maker Studio-ZH_02108.jpg" />
+          </a>
+          <a href="/images/Sorang Sorang (Ticket)-ZH_01153.jpg">
+            <img src="/images/Sorang Sorang (Ticket)-ZH_01153.jpg" />
+          </a>
+          <a href="/images/Sorang Sorang (Ticket)-ZH_01185.jpg">
+            <img src="/images/Sorang Sorang (Ticket)-ZH_01185.jpg" />
+          </a>
+          <a href="/images/Sorang Sorang (Ticket)-ZH_01325.jpg">
+            <img src="/images/Sorang Sorang (Ticket)-ZH_01325.jpg" />
+          </a>
+          <a href="/images/Depan Sparkz-ZH_01803.jpg">
+            <img src="/images/Depan Sparkz-ZH_01803.jpg" />
+          </a>
+          <a href="/images/Maker Studio-ZH_02006.jpg">
+            <img src="/images/Maker Studio-ZH_02006.jpg" />
+          </a>
+          <a href="/images/playsmart_2017-201711181153-2high.jpg">
+            <img src="/images/playsmart_2017-201711181153-2high.jpg" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="spacing-lg">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 g-0">
+          <div class="col">
+            <div class="card card-cta text-bg-dark border-0 aspect-video">
+              <img
+              width="400"
+              height="300"
+                src="/images/playsmart_2017-201711171351-14high.jpg"
+                class="card-img object-fit-cover h-100"
+              />
+              <img class="card-blob" src="/petrosains/blob-card.svg" />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end align-items-start"
+              >
+                <h3 class="card-title">Beyond Petrosains at Suria KLCC</h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a href="#" class="btn btn-outline-light btn-sm"
+                  >Find Out More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-cta text-bg-dark border-0 aspect-video">
+              <img
+              width="400"
+              height="300"
+                src="/images/playsmart_2017-201711180931-17high.jpg"
+                class="card-img object-fit-cover h-100"
+              />
+              <img class="card-blob" src="/petrosains/blob-card-purple.svg" />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end align-items-start"
+              >
+                <h3 class="card-title">Bringing a slice of science home</h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a href="#" class="btn btn-outline-light btn-sm"
+                  >Find Out More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Layout>
+
+<style lang="scss" is:global>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .lead {
+    font-size: 22px;
+    text-wrap: balance;
+  }
+
+  //
+
+  .popup-gallery img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+</style>

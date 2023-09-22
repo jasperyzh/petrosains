@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import PageBanner from "../components/_PageBanner.astro";
+---
+
+<Layout>
+  <main>
+    <section class="container">
+      <ul>
+        <li><a href="/">frontpage</a></li>
+        <li><a href="/single">single</a></li>
+        <li><a href="/page">page</a></li>
+        <li><a href="/archive">archive</a></li>
+        <li><a href="/404">404</a></li>
+        <li><a href="/cheatsheet">cheatsheet</a></li>
+      </ul>
+    </section>
+
+    <!-- <Cheatsheet /> -->
+    <!-- <Shortcodes /> -->
+
+    <PageBanner classes="page-title-small" />
+
+    <!-- COTENT CONTAINER -->
+    <div class="container p-140-cont">
+      <div class="row mb-40">
+        <div class="col-md-6 text-center img-container-404">
+          <img alt="img" src="/haswell/images/content/404.png" />
+        </div>
+        <div class="col-md-6 m-top-10">
+          <h3>OOPS! THE PAGE YOU WERE LOOKING FOR, COULDN'T BE FOUND</h3>
+          <p>
+            We're sorry, but the page you were looking for doesn't exist. Here
+            are some useful links
+          </p>
+          <div class="row m-top-20">
+            <div class="col-md-6">
+              <ul class="icon-list">
+                <li>
+                  <i class="fa fa-angle-right"></i><a
+                    class="a-invert"
+                    href="index.html">Home</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i><a
+                    class="a-invert"
+                    href="about-us.html">About Us</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i><a
+                    class="a-invert"
+                    href="faq.html">FAQs</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="icon-list">
+                <li>
+                  <i class="fa fa-angle-right"></i><a
+                    class="a-invert"
+                    href="portfolio-2-col.html">Portfolio</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i><a
+                    class="a-invert"
+                    href="blog.html">Blog</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i><a
+                    class="a-invert"
+                    href="contact.html">Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

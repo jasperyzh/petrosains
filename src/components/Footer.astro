@@ -1,0 +1,111 @@
+---
+import Social from "../components/_Social.astro";
+
+---
+<Social />
+
+
+<footer>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md text-center text-md-start">
+        <section class="widget">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+          >
+            <img
+              class="logo mx-auto mx-md-0"
+              src="/assets/logo-petrosains-full.svg"
+              alt="Logo of Petrosains"
+              width="180"
+            />
+          </a>
+          <p>
+            Petrosains, The Discovery Centre
+            <br />Level 4, Suria KLCC
+            <br />PETRONAS Twin Towers
+            <br />Kuala Lumpur City Centre
+            <br />50088, Kuala Lumpur
+          </p>
+          <p>infopetrosains@petronas.com</p>
+        </section>
+      </div>
+
+      <div class="col offset-md-1">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <ul class="nav justify-content-center justify-content-md-start">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Terms of Use</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacy Policy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"
+            ><span>&copy; Copyright 2023 New World</span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style lang="scss">
+  footer {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+
+    p,
+    a.nav-link,
+    a.nav-link.disabled {
+      color: var(--bs-light);
+    }
+
+    .logo {
+      filter: brightness(200);
+    }
+  }
+</style>

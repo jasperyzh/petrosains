@@ -1,0 +1,172 @@
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas Primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <picture>
+            <source
+              media="(min-width:425px)"
+              srcset="/assets/logo-petrosains-full.svg"
+            />
+            <img
+              class="logo"
+              src="/assets/logo-petrosains-icon.svg"
+              alt="Logo of Petrosains"
+            />
+          </picture>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasPrimary"
+          aria-controls="offcanvasPrimary"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-3"></i>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasPrimary"
+          aria-labelledby="offcanvasPrimaryLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasPrimaryLabel">
+              Offcanvas
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul id="primary_1" class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="primary_2" class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Venue Rental</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Xplorasi Gift Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Discoverers League</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Explore PlaySmart</a>
+              </li>
+            </ul>
+
+            <ul id="primary_3" class="navbar-nav">
+              <span class="navbar-text me-3">Open Today 9AM-9PM</span>
+              <li class="nav-item">
+                <button class="btn btn-secondary rounded-pill" href="#"
+                  >Buy Tickets</button
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<style lang="scss">
+  header {
+    // container
+    & > div {
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+
+    // logo
+    .logo {
+      width: 52px;
+      @media (min-width: 425px) {
+        width: 180px;
+      }
+    }
+
+    // primary_menu--mobile
+
+    // primary_menu--desktop
+    @media (min-width: 992px) {
+      .offcanvas-body {
+        display: grid !important;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+        #primary_1 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+        #primary_2 {
+          grid-column: auto;
+          grid-row: 2/3;
+
+          text-align: center;
+        }
+        #primary_3 {
+          grid-column: 2/3;
+          grid-row: 1/3;
+        }
+        & > ul {
+          background: rgba(0, 0, 0, 0.2);
+          display: inline-flex;
+          justify-self: start;
+          align-self: start;
+          padding: 0 1rem;
+          border-radius: var(--bs-border-radius-xxl);
+        }
+
+        ul.navbar-nav {
+          font-size: 0.875rem;
+        }
+      }
+
+      /* Open dropdown on hover */
+      .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+      }
+      /* Animation */
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+</style>
