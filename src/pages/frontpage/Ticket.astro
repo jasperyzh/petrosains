@@ -1,155 +1,202 @@
 <section id="tickets" class="text-bg-primary spacing-lg pb-5">
-    <div class="custom-shape-divider-top-1690999353">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
+  <div class="custom-shape-divider-top-1690999353">
+    <svg
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+  </div>
+
+  <header class="section-header">
+    <h2>Tickets</h2>
+    <p>We have both MyKad or non- MyKad tickets for sale, see you there!</p>
+  </header>
+
+  <div class="container">
+    <div class="ticket-info col-md-10 mx-auto my-5">
+      <ul
+        class="nav nav-pills justify-content-center"
+        id="myTab"
+        role="tablist"
       >
-        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
-      </svg>
-    </div>
-    <div class="container">
-        <div class="row text-center">
-            
-        <h2 class="display-1">Tickets</h2>
-        <p class="lead">We have both MyKad or non- MyKad tickets for sale, see you there!</p>
-        </div>
-      <div class="ticket-info col-md-10 mx-auto my-5">
-        <ul
-          class="nav nav-pills justify-content-center"
-          id="myTab"
-          role="tablist"
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="mykadholder-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#mykadholder-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="mykadholder-tab-pane"
+            aria-selected="true">MyKad Holder</button
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="nonmykad-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nonmykad-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="nonmykad-tab-pane"
+            aria-selected="false">Non-MyKad</button
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="mykadholder-tab-pane"
+          role="tabpanel"
+          aria-labelledby="mykadholder-tab"
+          tabindex="0"
         >
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="mykadholder-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#mykadholder-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="mykadholder-tab-pane"
-              aria-selected="true">MyKad Holder</button
-            >
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="nonmykad-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nonmykad-tab-pane"
-              type="button"
-              role="tab"
-              aria-controls="nonmykad-tab-pane"
-              aria-selected="false">Non-MyKad</button
-            >
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="mykadholder-tab-pane"
-            role="tabpanel"
-            aria-labelledby="mykadholder-tab"
-            tabindex="0"
+          <table
+            class="table table-success text-center text-white my-5 fs-4"
+            style="table-layout: fixed"
           >
-            <table
-              class="table table-success text-center text-white my-5 fs-4"
-              style="table-layout: fixed"
-            >
-              <thead>
-                <tr class="border-bottom border-white">
-                  <th scope="col" class="text-center">Infant</th>
-                  <th scope="col" class="text-center">Child / Senior</th>
-                  <th scope="col" class="text-center">Adult</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="2" style="vertical-align: middle">
-                    <div class="price">Free</div>
-                    <div class="day">Weekdays, Weekends & Holidays*</div>
-                  </td>
-                  <td>
-                    <div class="price">RM 10</div>
-                    <div class="day">Weekdays</div></td
-                  >
-                  <td>
-                    <div class="price">RM 22</div>
-                    <div class="day">Weekdays</div></td
-                  >
-                </tr>
-                <tr>
-                  <td>
-                    <div class="price">RM 12</div>
-                    <div class="day">Weekends & Holidays*</div></td
-                  >
-                  <td>
-                    <div class="price">RM 25</div>
-                    <div class="day">Weekends & Holidays*</div></td
-                  >
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nonmykad-tab-pane"
-            role="tabpanel"
-            aria-labelledby="nonmykad-tab"
-            tabindex="0"
+            <thead>
+              <tr class="border-bottom border-white">
+                <th scope="col" class="text-center">Infant</th>
+                <th scope="col" class="text-center">Child / Senior</th>
+                <th scope="col" class="text-center">Adult</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" style="vertical-align: middle">
+                  <div class="price">Free</div>
+                  <div class="day">Weekdays, Weekends & Holidays*</div>
+                </td>
+                <td>
+                  <div class="price">RM 10</div>
+                  <div class="day">Weekdays</div></td
+                >
+                <td>
+                  <div class="price">RM 22</div>
+                  <div class="day">Weekdays</div></td
+                >
+              </tr>
+              <tr>
+                <td>
+                  <div class="price">RM 12</div>
+                  <div class="day">Weekends & Holidays*</div></td
+                >
+                <td>
+                  <div class="price">RM 25</div>
+                  <div class="day">Weekends & Holidays*</div></td
+                >
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nonmykad-tab-pane"
+          role="tabpanel"
+          aria-labelledby="nonmykad-tab"
+          tabindex="0"
+        >
+          <table
+            class="table table-success text-center text-white my-5 fs-4"
+            style="table-layout: fixed"
           >
-            <table
-              class="table table-success text-center text-white my-5 fs-4"
-              style="table-layout: fixed"
-            >
-              <thead>
-                <tr class="border-bottom border-white">
-                  <th scope="col" class="text-center">Infant</th>
-                  <th scope="col" class="text-center">Child / Senior</th>
-                  <th scope="col" class="text-center">Adult</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="2" style="vertical-align: middle">
-                    <div class="price">Free</div>
-                    <div class="day">Weekdays, Weekends & Holidays*</div>
-                  </td>
-                  <td>
-                    <div class="price">RM 20</div>
-                    <div class="day">Weekdays</div></td
-                  >
-                  <td>
-                    <div class="price">RM 35</div>
-                    <div class="day">Weekdays</div></td
-                  >
-                </tr>
-                <tr>
-                  <td>
-                    <div class="price">RM 40</div>
-                    <div class="day">Weekends & Holidays*</div></td
-                  >
-                  <td>
-                    <div class="price">RM 25</div>
-                    <div class="day">Weekends & Holidays*</div></td
-                  >
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <thead>
+              <tr class="border-bottom border-white">
+                <th scope="col" class="text-center">Infant</th>
+                <th scope="col" class="text-center">Child / Senior</th>
+                <th scope="col" class="text-center">Adult</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" style="vertical-align: middle">
+                  <div class="price">Free</div>
+                  <div class="day">Weekdays, Weekends & Holidays*</div>
+                </td>
+                <td>
+                  <div class="price">RM 20</div>
+                  <div class="day">Weekdays</div></td
+                >
+                <td>
+                  <div class="price">RM 35</div>
+                  <div class="day">Weekdays</div></td
+                >
+              </tr>
+              <tr>
+                <td>
+                  <div class="price">RM 40</div>
+                  <div class="day">Weekends & Holidays*</div></td
+                >
+                <td>
+                  <div class="price">RM 25</div>
+                  <div class="day">Weekends & Holidays*</div></td
+                >
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-    <div class="custom-shape-divider-bottom-1690999508">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
-      </svg>
-    </div>
-  </section>
+  </div>
+  <div class="custom-shape-divider-bottom-1690999508">
+    <svg
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+  </div>
+</section>
+
+<style lang="scss">
+  #tickets {
+    position: relative;
+    .custom-shape-divider-top-1690999353 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .custom-shape-divider-top-1690999353 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 45px;
+    }
+
+    .custom-shape-divider-top-1690999353 .shape-fill {
+      fill: #ffffff;
+    }
+
+    .custom-shape-divider-bottom-1690999508 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1690999508 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 45px;
+    }
+
+    .custom-shape-divider-bottom-1690999508 .shape-fill {
+      fill: #ffffff;
+    }
+  }
+</style>

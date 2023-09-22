@@ -1,23 +1,50 @@
-<section class="spacing-lg">
+<section id="social" class="spacing-lg">
   <div class="container">
     <div class="col mx-auto text-center">
-      <h2>Stay Connected</h2>
+      <h2 class="display-3">Stay Connected</h2>
 
-      <div class="d-flex tw-gap-5 justify-content-center">
-        <button class="btn btn-primary square-button">
-          <i class="bi bi-tiktok text-white"></i>
-        </button>
-        <button class="btn btn-primary square-button">
-          <i class="bi bi-facebook text-white"></i>
-        </button>
-
-        <button class="btn btn-primary square-button">
-          <i class="bi bi-instagram text-white"></i>
-        </button>
-        <button class="btn btn-primary square-button">
-          <i class="bi bi-youtube text-white"></i>
-        </button>
-      </div>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
+
+<style>
+
+  .bi {
+    font-size: 2rem;
+    display: flex;
+    color: #fff;
+  }
+  .nav-link {
+    padding: 0;
+    background-color: var(--bs-primary);
+    border-radius: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+
+    &:hover {
+      background-color: var(--bs-primary-text-emphasis)
+    }
+  }
+</style>

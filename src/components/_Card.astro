@@ -11,19 +11,12 @@ const {
 ---
 
 <div class="col">
-  <div class="card card-default text-bg-secondary shadow h-100">
+  <div class="card card__article text-bg-secondary">
     <a href={link}>
-      <img
-        src={imgsrc}
-        width="512"
-        height="512"
-        alt=""
-        class="object-fit-cover"
-        style="aspect-ratio: 4/3"
-      />
+      <img src={imgsrc} width="512" height="512" alt="" class="card-img-top" />
     </a>
     <div class="card-body">
-      <h3 class="card-title">
+      <h3 class="card-title h4">
         <a href="#" class="text-white">{title}</a>
       </h3>
       <p class="card-text">
@@ -31,7 +24,25 @@ const {
       </p>
     </div>
     <footer class="card-footer">
-      <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+      <a href="#" class="btn btn-outline-light">Read More</a>
     </footer>
   </div>
 </div>
+<style lang="scss">
+  .card.card__article {
+    border: 0;
+    height: 100%;
+    .card-img-top {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+    .card-footer {
+      border: 0;
+      background: transparent;
+      padding-bottom: 1rem;
+    }
+  }
+</style>

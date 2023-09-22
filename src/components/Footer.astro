@@ -1,12 +1,5 @@
----
-import Social from "../components/_Social.astro";
-
----
-<Social />
-
-
 <footer>
-  <div class="container py-5">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md text-center text-md-start">
         <section class="widget">
@@ -97,6 +90,9 @@ import Social from "../components/_Social.astro";
   footer {
     background-color: var(--bs-primary);
     color: var(--bs-light);
+    
+    padding-top: clamp(1rem, 5vw, 3rem);
+    padding-bottom: clamp(1rem, 5vw, 1.5rem);
 
     p,
     a.nav-link,
